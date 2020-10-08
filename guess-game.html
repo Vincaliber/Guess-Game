@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script> 
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <h2><span class="commonWordStyles" id="g">G</span>
+            <span class="commonWordStyles" id="u">U</span>
+            <span class="commonWordStyles" id="e">E</span>
+            <span class="commonWordStyles" id="s1">S</span>
+            <span class="commonWordStyles" id="s2">S</span>
+        </h2>
+
+        <div id="level" style="display: block">
+            
+                <p class="levelscore" id="levels">Level <span id="levelNumber"></span></p> &nbsp;
+                <p  class="levelscore" id="score">Score <span id="counter"></span> &nbsp; <i class="fa fa-coins" style="color: gold;"></i> </p>
+            <br/><br/>
+            <span id="levelDesc0"></span>
+            <span id="levelDesc"></span>
+            <br/><br/>
+            <div class="images" id="animalContainer">
+                <img src="" alt="" width="237" height="213" id="animal" class="img-responsive" />
+            </div>
+
+            <div>
+                <input type="text" name="" id="l0f_input" class="numberStyle " disabled>
+                <input type="text" name="" id="l0s_input" class="numberStyle " disabled>
+                <input type="text" name="" id="l0t_input" class="numberStyle " disabled>
+            </div>
+            <div id="level0Keys" class="levelKeys">
+                <div class="row">
+                    <input type="button" value="a" onclick="loginCheck('a')" class="numberStyle nums" />
+                    <input type="button" value="o" onclick="loginCheck('o')" class="numberStyle nums" />
+                    <input type="button" value="z" onclick="loginCheck('z')" class="numberStyle nums" />
+                </div>
+                <div class="row">
+                    <input type="button" value="g" onclick="loginCheck('g')" class="numberStyle nums" />
+                    <input type="button" value="c" onclick="loginCheck('c')" class="numberStyle nums" />
+                    <input type="button" value="q" onclick="loginCheck('q')" class="numberStyle nums" />
+                </div>
+
+                <div class="row">
+                    <input type="button" value="w" onclick="loginCheck('w')" class="numberStyle nums" />
+                    <input type="button" value="x" onclick="loginCheck('x')" class="numberStyle nums" />
+                    <input type="button" value="u" onclick="loginCheck('u')" class="numberStyle nums" />
+                </div>
+            </div>
+            <div id="level1Keys" style="display: none;" class="levelKeys">
+                <div class="row">
+                    <input type="button" value="t" onclick="loginCheck('t')" class="numberStyle nums" />
+                    <input type="button" value="l" onclick="loginCheck('l')" class="numberStyle nums" />
+                    <input type="button" value="z" onclick="loginCheck('z')" class="numberStyle nums" />
+                </div>
+                <div class="row">
+                    <input type="button" value="g" onclick="loginCheck('g')" class="numberStyle nums" />
+                    <input type="button" value="c" onclick="loginCheck('c')" class="numberStyle nums" />
+                    <input type="button" value="p" onclick="loginCheck('p')" class="numberStyle nums" />
+                </div>
+
+                <div class="row">
+                    <input type="button" value="m" onclick="loginCheck('m')" class="numberStyle nums" />
+                    <input type="button" value="b" onclick="loginCheck('b')" class="numberStyle nums" />
+                    <input type="button" value="i" onclick="loginCheck('i')" class="numberStyle nums" />
+                </div>
+            </div>
+            <div id="level2Keys" style="display: none;" class="levelKeys">
+                <div class="row">
+                    <input type="button" value="t" onclick="loginCheck('t')" class="numberStyle nums" />
+                    <input type="button" value="l" onclick="loginCheck('l')" class="numberStyle nums" />
+                    <input type="button" value="z" onclick="loginCheck('z')" class="numberStyle nums" />
+                </div>
+                <div class="row">
+                    <input type="button" value="a" onclick="loginCheck('a')" class="numberStyle nums" />
+                    <input type="button" value="e" onclick="loginCheck('e')" class="numberStyle nums" />
+                    <input type="button" value="p" onclick="loginCheck('p')" class="numberStyle nums" />
+                </div>
+
+                <div class="row">
+                    <input type="button" value="m" onclick="loginCheck('m')" class="numberStyle nums" />
+                    <input type="button" value="q" onclick="loginCheck('q')" class="numberStyle nums" />
+                    <input type="button" value="r" onclick="loginCheck('r')" class="numberStyle nums" />
+                </div>
+            </div>
+            <div id="level3Keys" style="display: none;" class="levelKeys">
+                <div class="row">
+                    <input type="button" value="t" onclick="loginCheck('t')" class="numberStyle nums" />
+                    <input type="button" value="x" onclick="loginCheck('x')" class="numberStyle nums" />
+                    <input type="button" value="z" onclick="loginCheck('z')" class="numberStyle nums" />
+                </div>
+                <div class="row">
+                    <input type="button" value="i" onclick="loginCheck('i')" class="numberStyle nums" />
+                    <input type="button" value="e" onclick="loginCheck('e')" class="numberStyle nums" />
+                    <input type="button" value="a" onclick="loginCheck('a')" class="numberStyle nums" />
+                </div>
+
+                <div class="row">
+                    <input type="button" value="j" onclick="loginCheck('j')" class="numberStyle nums" />
+                    <input type="button" value="k" onclick="loginCheck('k')" class="numberStyle nums" />
+                    <input type="button" value="o" onclick="loginCheck('o')" class="numberStyle nums" />
+                </div>
+            </div>
+            <div id="level4Keys" style="display: none;" class="levelKeys">
+                <div class="row">
+                    <input type="button" value="h" onclick="loginCheck('h')" class="numberStyle nums" />
+                    <input type="button" value="x" onclick="loginCheck('x')" class="numberStyle nums" />
+                    <input type="button" value="z" onclick="loginCheck('z')" class="numberStyle nums" />
+                </div>
+                <div class="row">
+                    <input type="button" value="i" onclick="loginCheck('i')" class="numberStyle nums" />
+                    <input type="button" value="e" onclick="loginCheck('e')" class="numberStyle nums" />
+                    <input type="button" value="a" onclick="loginCheck('a')" class="numberStyle nums" />
+                </div>
+
+                <div class="row">
+                    <input type="button" value="j" onclick="loginCheck('j')" class="numberStyle nums" />
+                    <input type="button" value="k" onclick="loginCheck('k')" class="numberStyle nums" />
+                    <input type="button" value="n" onclick="loginCheck('n')" class="numberStyle nums" />
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row ">
+            <button id="check" onclick="loginCheck('submit')">Submit</button><br/>
+            <button id="clear" onclick="clearValue()">Clear</button>
+        </div>
+
+        <div class="row resultDiv">
+            <h2 id="result"></h2> <br/>
+            <button id="restart" onclick="restart()">Restart</button>          
+        </div>
+
+
+    </div>
+
+    <script type="text/JavaScript" src="script.js"></script>
+
+</body>
+
+</html>
